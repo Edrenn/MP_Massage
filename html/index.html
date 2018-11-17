@@ -33,6 +33,13 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <style>
+       #map {
+        height: 300px;
+        width: 350px;
+       }
+    </style>
+
 </head>
 
 <body id="page-top">
@@ -51,13 +58,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">A Propos</a>
+                        <a class="page-scroll" href="#about">Présentation</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#services">Prestations</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Tarifs</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Me contacter</a>
@@ -72,10 +76,10 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Marie-Paule RODRIGUEZ</h1>
+                <h1 id="homeHeading">Massage relaxant</h1>
                 <hr>
-                <p>Massage relaxant</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">A propos de moi</a>
+                <h2 >Marie-Paule RODRIGUEZ</h2>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Présentation</a>
             </div>
         </div>
     </header>
@@ -83,9 +87,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">A propos de moi</h2>
+                    <h2 class="section-heading">Présentation</h2>
                     <hr class="light">
-                    <p class="text-faded">Infirmiere liberale depuis 30 ans , je prends soin des corps et des âmes avec toujours autant de plaisir
+                    <p >Infirmiere liberale depuis 30 ans , je prends soin des corps et des âmes avec toujours autant de plaisir
                         la pratique de massage de relaxation, me permet d'apporter du bien-être aussi à une population en bonne santé
                         désireuse de faire une pause, un break, dans une vie active toujours plus rythmée, stressante et fatigante !
                     </p>
@@ -119,7 +123,7 @@
                     <div class="service-box">
                         <img src="../img/massage-jambes.jpg" class="img-responsive" alt="">
                         <h3>Massage du dos et des jambes</h3>
-                        <p class="text-muted">Massage relaxant du dos et des jambes (tu peux faire dodo tellement que t'es bien) d'une durée de 60 minutes pour être détendu avec une ptite musique relaxante et tout là allléééééééé.</p>
+                        <p class="text-muted">Massage relaxant du dos et des jambes d'une durée de 60 minutes pour être détendu avec une ptite musique relaxante.</p>
                         <p class="text-muted">Durée : 40min | Prix : 30 €
                     </div>
                     <hr>
@@ -134,7 +138,7 @@
                     <hr>
                 </div>
             </div>
-            <div id="row2" class="row">
+            <!--<div id="row2" class="row">
                 <div class="col-lg-4 col-md-12 text-center">
                     <div class="service-box">
                         <img src="../img/massage-visage-resized.jpg" class="img-responsive" alt="">
@@ -148,7 +152,7 @@
                     <div class="service-box">
                         <img src="../img/massage-corps.jpeg" class="img-responsive" alt="">
                         <h3>Massage autre</h3>
-                        <p class="text-muted">Massage relaxant du dos et des jambes (tu peux faire dodo tellement que t'es bien) d'une durée de 60 minutes pour être détendu avec une ptite musique relaxante et tout là allléééééééé.</p>
+                        <p class="text-muted">Massage relaxant du dos et des jambes d'une durée de 60 minutes pour être détendu avec une ptite musique relaxante.</p>
                         <p class="text-muted">Durée : 40min | Prix : 30 €
                     </div>
                     <hr>
@@ -162,7 +166,7 @@
                     </div>
                     <hr>
                 </div>
-            </div>
+            </div>-->
         </div>
     </section>
 
@@ -175,14 +179,33 @@
                     <hr class="primary">
                     <p>Offrez-vous dès maintenant votre massage détente !</p>
                 </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <img src="../img/icon/phoneLogo.png" class="customIcon fa fa-phone fa-3x sr-contact">
-                    <p>06.73.03.15.04</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <img src="../img/icon/emailLogo.png" class="customIcon fa fa-envelope-o fa-3x sr-contact">
-                    <p><a href="mailto:marie-paulerodriguez@orange.fr" id="customMailLink">marie-paulerodriguez@orange.fr</a></p>
-                </div>
+
+                
+                    <div class="col-lg-4 col-lg-offset-2 text-center">
+                        <img src="../img/icon/phoneLogo.png" class="customIcon fa fa-phone fa-3x sr-contact">
+                        <p>06.73.03.15.04</p>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <img src="../img/icon/emailLogo.png" class="customIcon fa fa-envelope-o fa-3x sr-contact">
+                        <p><a href="mailto:marie-paulerodriguez@orange.fr" id="customMailLink">marie-paulerodriguez@orange.fr</a></p>
+                    </div>
+                <!--<div id="map" class="col-lg-6 col-lg-offset-2" style="margin-left: 35%"></div>
+                <script>
+                  function initMap() {
+                    var uluru = {lat: 48.375421, lng: -2.784935};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 9.75,
+                      center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map
+                    });
+                  }
+                </script>
+                <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCOP_4IBN_s9spYTREZIM0rtMVWuS34TC4 &callback=initMap">
+                </script>-->
             </div>
         </div>
     </section>
